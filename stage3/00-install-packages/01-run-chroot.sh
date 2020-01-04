@@ -1,0 +1,4 @@
+#!/bin/bash -e
+
+echo unattended-upgrades unattended-upgrades/enable_auto_updates boolean true | debconf-set-selections
+dpkg-reconfigure -f noninteractive unattended-upgrades

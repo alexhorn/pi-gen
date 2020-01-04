@@ -1,0 +1,11 @@
+version: '3.4'
+services:
+  app:
+    image: watchpoint:latest
+    restart: always
+    network_mode: host
+    volumes:
+      - "/etc/ba:/etc/ba"
+      - "/var/lib/ba:/var/lib/ba"
+    environment:
+      - BA_PORT=80

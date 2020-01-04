@@ -1,0 +1,14 @@
+# https://stackoverflow.com/a/48066454
+
+[Unit]
+Description=Watchpoint
+Requires=docker.service network-online.target
+After=docker.service network-online.target
+
+[Service]
+WorkingDirectory=/srv/watchpoint
+ExecStart=/srv/watchpoint/start.sh
+TimeoutStartSec=0
+
+[Install]
+WantedBy=multi-user.target
