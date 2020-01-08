@@ -5,7 +5,7 @@ services:
     restart: always
     network_mode: host
     volumes:
-      - "/etc/ba:/etc/ba"
-      - "/var/lib/ba:/var/lib/ba"
+      - "/etc/watchpoint:/etc/watchpoint"
+      - "/var/lib/watchpoint:/var/lib/watchpoint"
     environment:
-      - BA_PORT=80
+      - WATCHPOINT_PORT=80
