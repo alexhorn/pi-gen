@@ -4,7 +4,7 @@ WATCHPOINT_DIR="${ROOTFS_DIR}/srv/watchpoint"
 
 # Copy watchpoint files
 mkdir "$WATCHPOINT_DIR"
-docker save --output "${WATCHPOINT_DIR}/watchpoint.tar" watchpoint:latest
+docker save --output "${WATCHPOINT_DIR}/watchpoint.tar" alexhorn/watchpoint:latest
 cp "files/docker-compose.yml" "files/start.sh" "$WATCHPOINT_DIR"
 
 # Set up systemd service

@@ -1,7 +1,7 @@
 version: '3.4'
 services:
   app:
-    image: watchpoint:latest
+    image: alexhorn/watchpoint:latest
     restart: always
     network_mode: host
     volumes:
@@ -9,3 +9,8 @@ services:
       - "/var/lib/watchpoint:/var/lib/watchpoint"
     environment:
       - WATCHPOINT_PORT=80
+  watchtower:
+    image: containrrr/watchtower
+    restart: always
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
