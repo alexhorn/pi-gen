@@ -5,7 +5,7 @@ Link: https://github.com/RPi-Distro/pi-gen/
 
 License: [3-Clause BSD License](https://github.com/RPi-Distro/pi-gen/blob/master/LICENSE)
 
-# stage3/00-install-packages/02-run-chroot.sh
+# stage3/00-install-packages/files/get-docker.sh
 Docker installation script by Docker, Inc.
 
 Link: https://github.com/docker/docker-install
